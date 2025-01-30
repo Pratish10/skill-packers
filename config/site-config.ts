@@ -10,7 +10,7 @@ export const siteConfig: Metadata = {
 	title: TITLE,
 	description: DESCRIPTION,
 	icons: {
-		icon: '../app/favicon.ico',
+		icon: '/favicon.ico',
 	},
 	applicationName: 'Skill Packers',
 	creator: 'Pratish',
