@@ -6,7 +6,7 @@ const DESCRIPTION =
 
 const BASE_URL = 'https://skill-packers.vercel.app';
 
-export const metadata: Metadata = {
+export const siteConfig: Metadata = {
 	title: {
 		default: TITLE,
 		template: '%s | Skill Packers',
