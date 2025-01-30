@@ -104,7 +104,7 @@ export default function LandingPage() {
 					<h2 className="text-3xl font-semibold text-blue-800 dark:text-blue-100 text-center mb-8">Our Products</h2>
 					<Swiper
 						spaceBetween={20}
-						slidesPerView={4}
+						slidesPerView={1}
 						breakpoints={{
 							640: { slidesPerView: 1 },
 							768: { slidesPerView: 2 },

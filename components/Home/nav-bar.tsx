@@ -13,6 +13,7 @@ import { useScroll } from '@/hooks/useScroll';
 import { Button } from '@/components/ui/button';
 import clsx from 'clsx';
 import { InfoBanner } from './InfoBanner';
+import { useResize } from '@/hooks/useResize';
 
 const NavLink = ({ href, label }: { href: string; label: string }) => (
 	<Link href={href} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
@@ -50,6 +51,7 @@ export const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
 	const { theme, setTheme } = useTheme();
 	const { scrollY } = useScroll();
+	const { width } = useResize();
 
 	useEffect(() => {
 		setScrolled(scrollY > 20);
@@ -65,7 +67,7 @@ export const Navbar = () => {
 			animate={{ y: 0 }}
 			transition={{ type: 'spring', stiffness: 300, damping: 30 }}
 		>
-			<InfoBanner />
+			{width > 792 && <InfoBanner />}
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-16 pt-4">
 					<Link href={APP_PATHS.HOME} className="flex items-center space-x-2">
