@@ -33,7 +33,7 @@ export function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href={APP_PATHS.CONTACT} className="text-sm hover:text-blue-600 dark:hover:text-blue-400">
+								<Link href={APP_PATHS.CONTACT} className="text-sm hover:text-blue-600 dark:hover:text-blue-400" target="_blank">
 									Contact Us
 								</Link>
 							</li>
@@ -43,13 +43,13 @@ export function Footer() {
 								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									href="https://www.indiamart.com/skill-packers/skill-packers.pdf"
 									className="text-sm hover:text-blue-600 dark:hover:text-blue-400"
 									target="_blank"
 								>
 									Download Brochure
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

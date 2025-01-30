@@ -2,17 +2,15 @@
 
 import APP_PATHS, { COMMITMENT, FEATURES, HERO_PRODUCTS, PRODUCTS } from '@/config/path.config';
 import { AnimatePresence, motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
 import { Button } from '../ui/button';
 import { ArrowUp } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 import { useScroll } from '@/hooks/useScroll';
+import { Product } from '../Product';
 
 export default function LandingPage() {
 	const [showScrollTopButton, setShowScrollTopButton] = useState(false);
@@ -90,49 +88,9 @@ export default function LandingPage() {
 			</section>
 
 			{/* Products Section */}
-			<section id="products" className="py-16 bg-white dark:bg-slate-900">
-				<div className="container mx-auto px-4">
-					<h2 className="text-3xl font-semibold text-blue-800 dark:text-blue-100 text-center mb-8">Our Products</h2>
-					<Swiper
-						spaceBetween={20}
-						slidesPerView={1}
-						breakpoints={{
-							640: { slidesPerView: 1 },
-							768: { slidesPerView: 2 },
-							1024: { slidesPerView: 3 },
-						}}
-						navigation
-						pagination={{ clickable: true }}
-						modules={[Navigation, Pagination]}
-						className="product-slider"
-					>
-						{PRODUCTS.map((product) => (
-							<SwiperSlide key={product.id}>
-								<motion.div
-									className="bg-white rounded-lg overflow-hidden shadow-lg"
-									whileHover={{ scale: 1.05 }}
-									initial={{ opacity: 0, y: 20 }}
-									animate={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.8, delay: product.id * 0.2 }}
-								>
-									<div className="w-full h-full overflow-hidden relative">
-										<Image
-											src={product.src || '/placeholder.svg'}
-											alt={product.title}
-											className="object-cover"
-											width={300}
-											height={300}
-										/>
-										<div className="p-4">
-											<h3 className="text-lg font-medium dark:text-blue-800">{product.title}</h3>
-										</div>
-									</div>
-								</motion.div>
-							</SwiperSlide>
-						))}
-					</Swiper>
-				</div>
-			</section>
+			<motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.8 }}>
+				<Product products={PRODUCTS} />
+			</motion.div>
 
 			{/* Features Section */}
 			<section className="py-20 bg-gradient-to-b from-blue-100 to-blue-200 dark:from-slate-800 dark:to-slate-700">
@@ -206,6 +164,7 @@ export default function LandingPage() {
 						<Link
 							href={APP_PATHS.CONTACT}
 							className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full shadow-lg transition-all duration-300 text-lg font-semibold"
+							target="_blank"
 						>
 							Contact Us
 						</Link>
