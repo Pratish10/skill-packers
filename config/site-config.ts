@@ -77,9 +77,4 @@ export const siteConfig: Metadata = {
 			'max-snippet': -1,
 		},
 	},
-	verification: {
-		google: 'your-google-site-verification-code',
-		yandex: 'your-yandex-verification-code',
-		yahoo: 'your-yahoo-verification-code',
-	},
 };
