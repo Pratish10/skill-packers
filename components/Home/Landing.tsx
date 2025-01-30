@@ -109,7 +109,7 @@ export default function LandingPage() {
 						{PRODUCTS.map((product) => (
 							<SwiperSlide key={product.id}>
 								<motion.div
-									className="bg-white dark:bg-slate-700 rounded-lg overflow-hidden shadow-lg"
+									className="bg-white rounded-lg overflow-hidden shadow-lg"
 									whileHover={{ scale: 1.05 }}
 									initial={{ opacity: 0, y: 20 }}
 									animate={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function LandingPage() {
 											height={300}
 										/>
 										<div className="p-4">
-											<h3 className="text-lg font-medium">{product.title}</h3>
+											<h3 className="text-lg font-medium dark:text-blue-800">{product.title}</h3>
 										</div>
 									</div>
 								</motion.div>
