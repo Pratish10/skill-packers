@@ -48,6 +48,7 @@ const NavLinkMobile = ({
 );
 
 export const Navbar = () => {
+	const [isOpen, setIsOpen] = useState<boolean>(false);
 	const [scrolled, setScrolled] = useState(false);
 	const { theme, setTheme } = useTheme();
 	const { scrollY } = useScroll();
@@ -95,7 +96,12 @@ export const Navbar = () => {
 						</motion.button>
 					</div>
 
-					<Sheet>
+					<Sheet
+						onOpenChange={() => {
+							setIsOpen(!isOpen);
+						}}
+						open={isOpen}
+					>
 						<SheetTrigger asChild>
 							<motion.button
 								whileHover={{ scale: 1.1 }}
@@ -118,7 +124,13 @@ export const Navbar = () => {
 							<nav className="flex flex-col space-y-4">
 								{NAV_BAR_OPTIONS.map((item) => (
 									<div key={item.id}>
-										<NavLinkMobile href={item.href} label={item.name} />
+										<NavLinkMobile
+											href={item.href}
+											label={item.name}
+											onClick={() => {
+												setIsOpen(!isOpen);
+											}}
+										/>
 									</div>
 								))}
 								<Button
