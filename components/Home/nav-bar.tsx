@@ -71,8 +71,11 @@ export const Navbar = () => {
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-16 pt-4">
 					<Link href={APP_PATHS.HOME} className="flex items-center space-x-2">
-						<Image src={APP_LOGO || '/placeholder.svg'} alt="skill-packers" width={40} height={40} className="rounded-full" />
-						<span className="font-bold text-2xl text-blue-800 dark:text-gray-300">Skill Packers</span>
+						<Image src={APP_LOGO || '/placeholder.svg'} alt="skill-packers" width={50} height={50} className="rounded-full" />
+						<div className="flex-col">
+							<span className="font-bold text-2xl text-blue-800 dark:text-gray-300">Skill Packers</span>
+							<p className="text-xs text-gray-600 dark:text-gray-400">Packaging company in Bommasandra</p>
+						</div>
 					</Link>
 
 					<div className="hidden md:flex items-center space-x-8">
@@ -106,7 +109,10 @@ export const Navbar = () => {
 							<SheetTitle className="my-4">
 								<Link href={APP_PATHS.HOME} className="flex items-center space-x-2">
 									<Image src={APP_LOGO || '/placeholder.svg'} alt="skill-packers" width={40} height={40} className="rounded-full" />
-									<span className="font-bold text-2xl text-blue-800 dark:text-gray-300">Skill Packers</span>
+									<div className="flex-col">
+										<span className="font-bold text-2xl text-blue-800 dark:text-gray-300">Skill Packers</span>
+										<p className="text-xs text-gray-600 dark:text-gray-400">Packaging company in Bommasandra</p>
+									</div>
 								</Link>
 							</SheetTitle>
 							<nav className="flex flex-col space-y-4">

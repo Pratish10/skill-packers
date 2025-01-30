@@ -12,8 +12,11 @@ export default APP_PATHS;
 export const COMPANY_INFO = {
 	gstNumber: '29CTSPM1187K1ZT',
 	location: 'Bengaluru, Karnataka',
-	phone: '+91-8045205647',
-	email: 'info@skillpackers.com',
+	phone: '+91-7760640572',
+	email: 'skillpackers2017@gmail.com',
+	owner: 'Malthesh .K (Owner)',
+	googleMap:
+		'https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d288.44135620256213!2d77.73112045736194!3d12.80226627645106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d12.802318!2d77.73119!5e1!3m2!1sen!2sin!4v1738212086607!5m2!1sen!2sin',
 };
 
 export const NAV_BAR_OPTIONS = [
