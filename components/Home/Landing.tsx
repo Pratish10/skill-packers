@@ -81,15 +81,6 @@ export default function LandingPage() {
 						</Link>
 					</motion.div>
 				</div>
-				<div className="absolute inset-0 w-full h-full bg-blue-200 dark:bg-slate-800 opacity-20">
-					<Image
-						src="/placeholder.svg?height=1080&width=1920"
-						alt="Hero Background"
-						layout="fill"
-						objectFit="cover"
-						className="mix-blend-overlay"
-					/>
-				</div>
 				<div className="absolute inset-0 bg-repeat opacity-5">
 					<svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
 						<path d="M0 0h80v80H0z" fill="none" />
