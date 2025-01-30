@@ -26,8 +26,7 @@ export const siteConfig: Metadata = {
 		telephone: false,
 	},
 	icons: {
-		icon: '/favicon.ico',
-		apple: '/apple-icon.png',
+		icon: 'https://5.imimg.com/data5/SELLER/Logo/2025/1/480209498/ZX/NL/FN/31685456/logo-skill-packers-120x120.jpeg',
 	},
 	keywords: [
 		'wooden pallets',
@@ -65,7 +64,7 @@ export const siteConfig: Metadata = {
 		title: 'Pratish Ninawe',
 		description:
 			'Frontend Engineer specializing in React & TypeScript. Passionate about creating user-centered, scalable web apps and staying current with industry trends.',
-		images: ['https://pbs.twimg.com/profile_images/1750013751191891968/PQVxq1kE_400x400.jpg'],
+		images: ['https://5.imimg.com/data5/SELLER/Logo/2025/1/480209498/ZX/NL/FN/31685456/logo-skill-packers-120x120.jpeg'],
 	},
 	robots: {
 		index: true,
