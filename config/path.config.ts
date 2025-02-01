@@ -75,53 +75,53 @@ export const COMMITMENT = [
 export const PRODUCTS = [
 	{
 		id: 1,
-		title: 'Wooden Plywood Pallet',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2025/1/480205992/GE/UI/ER/31685456/product-jpeg-250x250.jpeg',
+		title: '100kg Pinewood Industrial Packaging Box',
+		src: '/100kg Pinewood Industrial Packaging Box.webp',
 	},
 	{
 		id: 2,
 		title: '3 Ton Rectnauglar Pinewood Wooden Pallet',
-		src: 'https://5.imimg.com/data5/SELLER/Default/2024/12/476748346/HX/BD/KO/31685456/pinewood-wooden-pallet-250x250.png',
+		src: '/3 Ton Rectnauglar Pinewood Wooden Pallet.webp',
 	},
 	{
 		id: 3,
-		title: 'Ply wood box with partetion',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2025/1/480281158/JU/VB/VR/31685456/product-jpeg-250x250.jpeg',
+		title: '300kg Industrial Plywood Packaging Box',
+		src: '/300kg Industrial Plywood Packaging Box.webp',
 	},
 	{
 		id: 4,
-		title: 'Ply wood box with partition',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2025/1/480281158/JU/VB/VR/31685456/product-jpeg-250x250.jpeg',
+		title: '50kg Industrial Wooden Packing Cases',
+		src: '/50kg Industrial Wooden Packing Cases.webp',
 	},
 	{
 		id: 5,
-		title: 'Ply wood pallets and box',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2025/1/480280393/WM/OT/RD/31685456/product-jpeg-1000x1000.jpeg',
+		title: 'Ply wood box with partition',
+		src: '/Ply wood box with partition.webp',
 	},
 	{
 		id: 6,
-		title: 'Big Wooden Packaging Box',
-		src: 'https://5.imimg.com/data5/SELLER/Default/2024/12/476752177/CO/MJ/EP/31685456/ea12302b-58dd-4b82-8c49-f90f9cb6f59a-250x250.jpeg',
+		title: 'Ply wood export paller',
+		src: '/Ply wood export paller.webp',
 	},
 	{
 		id: 7,
-		title: 'Pinewood Pallet',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2024/12/477407071/QB/OB/HC/31685456/product-jpeg-250x250.jpg',
+		title: 'Ply wood pallets and box',
+		src: '/Ply wood pallets and box.webp',
 	},
 	{
 		id: 8,
-		title: '70 kg Industrial Wooden Packaging Boxes',
-		src: 'https://5.imimg.com/data5/SELLER/Default/2024/12/476747974/YN/DP/CG/31685456/wooden-packaging-box-250x250.jpg',
+		title: 'Plywood Reper Pallet',
+		src: '/Plywood Reper Pallet.webp',
 	},
 	{
 		id: 9,
-		title: '5 Ton Industrial Plywood Wooden Pallet',
-		src: 'https://5.imimg.com/data5/SELLER/Default/2024/12/476753922/QE/PK/LQ/31685456/wooden-plywood-pallets-250x250.jpg',
+		title: 'Big Wooden Packaging Box',
+		src: '/Big Wooden Packaging Box.webp',
 	},
 	{
 		id: 10,
-		title: 'Pine wood colesabel box',
-		src: 'https://5.imimg.com/data5/ANDROID/Default/2025/1/480280105/FD/XE/RZ/31685456/product-jpeg-500x500.jpeg',
+		title: 'Wooden Plywood Pallet',
+		src: '/Wooden Plywood Pallet.webp',
 	},
 ];
 

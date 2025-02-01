@@ -46,7 +46,7 @@ export const Product: React.FC<ProductSectionProps> = ({ products }) => {
 					{products.map((product) => (
 						<SwiperSlide key={product.id}>
 							<motion.div
-								className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg h-[300px]"
+								className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg h-[300px] flex flex-col"
 								whileHover={{ scale: 1.03 }}
 								initial={{ opacity: 0, y: 20 }}
 								animate={{ opacity: 1, y: 0 }}
@@ -56,14 +56,18 @@ export const Product: React.FC<ProductSectionProps> = ({ products }) => {
 									<Image
 										src={product.src || '/placeholder.svg'}
 										alt={product.title}
-										layout="fill"
-										objectFit="cover"
-										className="rounded-t-lg"
+										fill
+										sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+										className={`rounded-t-lg object-contain transition-opacity duration-300 ${
+											imagesLoaded[product.id] ? 'opacity-100' : 'opacity-0'
+										}`}
 										onLoadingComplete={() => handleImageLoad(product.id)}
 									/>
-									{!imagesLoaded[product.id] && <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse" />}
+									{!imagesLoaded[product.id] && (
+										<div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse rounded-t-lg" />
+									)}
 								</div>
-								<div className="p-4">
+								<div className="p-4 flex-grow flex items-center">
 									<h3 className="text-sm font-medium text-blue-800 dark:text-blue-100 truncate">{product.title}</h3>
 								</div>
 							</motion.div>
