@@ -42,8 +42,8 @@ export const COMPANY_ALBUM = [
 export const NAV_BAR_OPTIONS = [
 	{ id: 1, name: 'Home', href: APP_PATHS.HOME },
 	{ id: 2, name: 'About Us', href: APP_PATHS.ABOUT },
-	{ id: 3, name: 'Services', href: APP_PATHS.SERVICES },
-	{ id: 4, name: 'Contact Us', href: APP_PATHS.CONTACT },
+	{ id: 3, name: 'Services', href: APP_PATHS.SERVICES, target: '_blank' },
+	{ id: 4, name: 'Contact Us', href: APP_PATHS.CONTACT, target: '_blank' },
 ];
 
 export const FEATURES = [

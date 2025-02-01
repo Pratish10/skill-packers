@@ -15,8 +15,8 @@ import clsx from 'clsx';
 import { InfoBanner } from './InfoBanner';
 import { useResize } from '@/hooks/useResize';
 
-const NavLink = ({ href, label }: { href: string; label: string }) => (
-	<Link href={href} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
+const NavLink = ({ href, label, ...rest }: { href: string; label: string; [key: string]: unknown }) => (
+	<Link href={href} {...rest} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
 		{label}
 	</Link>
 );
@@ -81,9 +81,7 @@ export const Navbar = () => {
 
 					<div className="hidden md:flex items-center space-x-8">
 						{NAV_BAR_OPTIONS.map((item) => (
-							<div key={item.id}>
-								<NavLink href={item.href} label={item.name} />
-							</div>
+							<NavLink key={item.id} label={item.name} {...item} />
 						))}
 
 						<motion.button
